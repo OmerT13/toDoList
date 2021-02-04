@@ -12,10 +12,10 @@ import com.ooteedemo.todo.model.ToDo;
 public abstract class ToDoRoomDatabase extends RoomDatabase {
 
 //    DBINSTANCE is a singleton that we create to make sure we don't instantiate the DB more than once
-    private static volatile ToDoRoomDatabase DBINSTANCE;
-    public abstract ToDoDao toDoDao();
+    public static volatile ToDoRoomDatabase DBINSTANCE;
+    public abstract ToDoDao toDoDao_abstract();
 
-    static ToDoRoomDatabase getDatabase(final Context context) {
+    public static ToDoRoomDatabase getDatabase(final Context context) {
         if (DBINSTANCE==null) {
             synchronized (ToDoRoomDatabase.class) {
                 if (DBINSTANCE==null) {

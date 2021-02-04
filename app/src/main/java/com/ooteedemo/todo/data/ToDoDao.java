@@ -1,5 +1,6 @@
 package com.ooteedemo.todo.data;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Insert;
 import androidx.room.Query;
@@ -23,5 +24,5 @@ public interface ToDoDao {
     int updateToDoItem(int id,String toDoText);
 
     @Query("SELECT * FROM todo_table")
-    List<ToDo> getAllToDos();
+    LiveData<List<ToDo>> getAllToDos();
 }
