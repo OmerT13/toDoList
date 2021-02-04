@@ -21,11 +21,11 @@ public class ToDoRepository {
         allToDos = toDoDao.getAllToDos();
     }
 
-    LiveData<List<ToDo>> getAllToDos() {
+    public LiveData<List<ToDo>> getAllToDos() {
         return allToDos;
     }
 
-    void insert(ToDo todo) {
+    public void insert(ToDo todo) {
         new insertAsyncTask(toDoDao).execute(todo);
     }
 
