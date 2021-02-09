@@ -12,14 +12,14 @@ public class ToDo {
 
     @NonNull
     @ColumnInfo(name = "todo_col")
-    private String noDo;
+    private String toDo;
 
     public ToDo(@NonNull String noDo) {
-        this.noDo = noDo;
+        this.toDo = noDo;
     }
 
     public String getNoDo() {
-        return noDo;
+        return toDo;
     }
 
     public int getId() {
@@ -31,6 +31,6 @@ public class ToDo {
     }
 
     public void setNoDo(@NonNull String noDo) {
-        this.noDo = noDo;
+        this.toDo = noDo;
     }
 }
