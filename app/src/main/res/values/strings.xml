@@ -10,4 +10,6 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="no_todo">No ToDos</string>
+    <string name="hint_todo">Enter a todo item</string>
+    <string name="save_text">Save Item</string>
 </resources>
