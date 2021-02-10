@@ -49,18 +49,21 @@ public abstract class ToDoRoomDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            toDoDao.deleteAll();
-
-            ToDo toDo = new ToDo("Wash the car");
-            toDoDao.insert(toDo);
-
-            toDo = new ToDo("Fill up car gas");
-            toDoDao.insert(toDo);
-
-            toDo = new ToDo("Get a car");
-            toDoDao.insert(toDo);
-
+            testDBPopulation (toDoDao);
             return null;
         }
+    }
+
+    private static void testDBPopulation(ToDoDao toDoDao) {
+        toDoDao.deleteAll();
+
+        ToDo toDo = new ToDo("Wash the car");
+        toDoDao.insert(toDo);
+
+        toDo = new ToDo("Fill up car gas");
+        toDoDao.insert(toDo);
+
+        toDo = new ToDo("Get a car");
+        toDoDao.insert(toDo);
     }
 }
