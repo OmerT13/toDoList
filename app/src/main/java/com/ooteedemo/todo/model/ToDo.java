@@ -14,11 +14,11 @@ public class ToDo {
     @ColumnInfo(name = "todo_col")
     private String toDo;
 
-    public ToDo(@NonNull String noDo) {
-        this.toDo = noDo;
+    public ToDo(@NonNull String toDo) {
+        this.toDo = toDo;
     }
 
-    public String getNoDo() {
+    public String getToDo() {
         return toDo;
     }
 
@@ -30,7 +30,7 @@ public class ToDo {
         this.id = id;
     }
 
-    public void setNoDo(@NonNull String noDo) {
-        this.toDo = noDo;
+    public void setToDo(@NonNull String toDo) {
+        this.toDo = toDo;
     }
 }

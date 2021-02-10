@@ -19,7 +19,7 @@ public class ToDoViewModel extends AndroidViewModel {
         allToDos = toDoRepository.getAllToDos();
     }
 
-    LiveData<List<ToDo>> getAllToDos() {
+    public LiveData<List<ToDo>> getAllToDos() {
         return allToDos;
     }
 

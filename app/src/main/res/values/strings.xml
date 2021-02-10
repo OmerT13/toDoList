@@ -12,4 +12,5 @@
     <string name="no_todo">No ToDos</string>
     <string name="hint_todo">Enter a todo item</string>
     <string name="save_text">Save Item</string>
+    <string name="empty_not_saved">Data has not been saved</string>
 </resources>

@@ -34,13 +34,13 @@ public class ToDoListAdapter extends RecyclerView.Adapter<ToDoListAdapter.ViewHo
     public void onBindViewHolder(@NonNull ToDoListAdapter.ViewHolder viewHolder, int position) {
         if (toDoList!=null) {
             ToDo current = toDoList.get(position);
-            viewHolder.toDoTextView.setText(current.getNoDo());
+            viewHolder.toDoTextView.setText(current.getToDo());
         } else {
             viewHolder.toDoTextView.setText(R.string.no_todo);
         }
     }
 
-    void setToDos(List<ToDo> toDos) {
+    public void setToDos(List<ToDo> toDos) {
         toDoList = toDos;
         notifyDataSetChanged();
     }

@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class NewToToDoActivity extends AppCompatActivity {
-    private static final String EXTRA_REPLY = "com.ooteedemo.todo.reply";
+    public static final String EXTRA_REPLY = "com.ooteedemo.todo.reply";
     private EditText editText;
 
     @Override
